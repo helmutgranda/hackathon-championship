@@ -9,7 +9,8 @@ import {NavigationService} from "./navigation.service";
 })
 export class NavigationComponent implements OnInit {
 
-  isExpanded = true;
+  events: string[] = [];
+  opened: boolean | undefined;
 
   constructor(private router: Router,
               public navigationService: NavigationService) { }
@@ -17,25 +18,25 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  expandSideNav() {
-    if(!this.isExpanded){
-      this.navigationService.sidenavWidth = NavigationService.MAX_WIDTH;
-      this.isExpanded = true;
-    }
-  }
-
-  collapseSideNav(){
-    if(this.isExpanded){
-      this.navigationService.sidenavWidth = NavigationService.MIN_WIDTH;
-      this.isExpanded = false;
-    }
-  }
-  sideNavToggle(){
-    if(this.isExpanded) {
-      this.navigationService.sidenavWidth = NavigationService.MIN_WIDTH;
-    } else {
-      this.navigationService.sidenavWidth = NavigationService.MAX_WIDTH;
-    }
-    this.isExpanded = !this.isExpanded;
-  }
+  // expandSideNav() {
+  //   if(!this.isExpanded){
+  //     this.navigationService.sidenavWidth = NavigationService.MAX_WIDTH;
+  //     this.isExpanded = true;
+  //   }
+  // }
+  //
+  // collapseSideNav(){
+  //   if(this.isExpanded){
+  //     this.navigationService.sidenavWidth = NavigationService.MIN_WIDTH;
+  //     this.isExpanded = false;
+  //   }
+  // }
+  // sideNavToggle(){
+  //   if(this.isExpanded) {
+  //     this.navigationService.sidenavWidth = NavigationService.MIN_WIDTH;
+  //   } else {
+  //     this.navigationService.sidenavWidth = NavigationService.MAX_WIDTH;
+  //   }
+  //   this.isExpanded = !this.isExpanded;
+  // }
 }
