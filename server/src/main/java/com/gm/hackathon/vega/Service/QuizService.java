@@ -2,7 +2,7 @@ package com.gm.hackathon.vega.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.gm.hackathon.vega.Model.Quiz;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -12,10 +12,9 @@ import java.util.List;
 @Service
 public class QuizService {
 
-    @Autowired
-    private ObjectMapper mapper;
+    private ObjectMapper mapper = new ObjectMapper();
 
-    private final List<Quiz> quizzes = Arrays.asList(mapper.readValue(QuizService.class.getResourceAsStream("quizzes.json"), Quiz[].class));
+    private final List<Quiz> quizzes = Arrays.asList(mapper.readValue(new ClassPathResource("quizzes.json").getFile(), Quiz[].class));
 
     private static QuizService instance;
 
