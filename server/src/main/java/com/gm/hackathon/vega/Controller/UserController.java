@@ -24,4 +24,12 @@ public class UserController {
     @GetMapping("/user/{id}/avatar")
     @ResponseBody
     public String getUserAvatar(@PathVariable int id) { return userService.getUserAvatar(id); }
+
+    @GetMapping("/users/dealership/{dealership}")
+    @ResponseBody
+    public List<User> getUsersByDealership(@PathVariable String dealership) { return userService.getUsersByDealership(dealership); }
+
+    @GetMapping("/users/state/{state}")
+    @ResponseBody
+    public List<User> getUsersByState(@PathVariable String state) { return userService.getUsersByState(state); }
 }

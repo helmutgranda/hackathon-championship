@@ -11,6 +11,11 @@ public class User {
     private String city;
     private String[] badges;
     private int experience;
+    private int correct_answers;
+    private int incorrect_answers;
+    private int percent_completed;
+    private String dealership;
+    private String state;
 
     public int getId() {
         return id;
@@ -90,5 +95,45 @@ public class User {
 
     public void setExperience(int experience) {
         this.experience = experience;
+    }
+
+    public int getCorrect_answers() {
+        return correct_answers;
+    }
+
+    public void setCorrect_answers(int correct_answers) {
+        this.correct_answers = correct_answers;
+    }
+
+    public int getIncorrect_answers() {
+        return incorrect_answers;
+    }
+
+    public void setIncorrect_answers(int incorrect_answers) {
+        this.incorrect_answers = incorrect_answers;
+    }
+
+    public String getDealership() {
+        return dealership;
+    }
+
+    public void setDealership(String dealership) {
+        this.dealership = dealership;
+    }
+
+    public int getPercent_completed() {
+        return percent_completed;
+    }
+
+    public void setPercent_completed(int percent_completed) {
+        this.percent_completed = percent_completed;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
     }
 }
