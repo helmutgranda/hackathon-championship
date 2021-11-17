@@ -1,1 +1,12 @@
-<p>navigation works!</p>
+<mat-sidenav-container class="simple-nav">
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+  (closed)="events.push('close!')">SideNav Content</mat-sidenav>
+
+  <div>
+    <button mat-button (click)="sidenav.toggle()">Toggle Nav</button>
+  </div>
+<!--  <mat-sidenav-content>-->
+<!--   -->
+
+<!--  </mat-sidenav-content>-->
+</mat-sidenav-container>
