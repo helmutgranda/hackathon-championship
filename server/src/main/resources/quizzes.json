@@ -1,0 +1,155 @@
+{
+  "questions": [
+    {
+      "id": 0,
+      "question": "Which charging types are available for home charging? Select all that apply.",
+      "choices": [
+        "Level 1 (120 Volts)",
+        "Level 2 (240 Volts)",
+        "DC Fast Charging"
+      ],
+      "answer": [
+        "Level 1 (120 Volts)",
+        "Level 2 (240 Volts)"
+      ],
+      "reason": "",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 1,
+      "question": "What is the fastest at-home charging option?",
+      "choices": [
+        "The charget that comes with your GM electric vehicle is the fastest charging option.",
+        "Some Professionally-installed Level 2 chargers offer the fastest home charging available",
+        "DC Fast Charging is the way to go, at home or on the road."
+      ],
+      "answer": [
+        "Some Professionally-installed Level 2 chargers offer the fastest home charging available"
+      ],
+      "reason": "",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 2,
+      "question": "What is the amperage rating for the Dual-Level Charge Cord that will be standard or available on all 2022 and later GM EVs?",
+      "choices": [
+        "32 Amps",
+        "40 Amps",
+        "80 Amps"
+      ],
+      "answer": [
+        "32 Amps"
+      ],
+      "reason": "The Dual Level Charge Cord provides 32 amps, for 15-30 miles of range per hour of charge. Professionally installed Level 2 charging stations can offer faster charging.",
+      "factoid": "Owners with long commutes or less time to charge their GM EVs may opt for a more powerful, professionally-installed Level 2 charging station.",
+      "imgsrc": ""
+    },
+    {
+      "id": 3,
+      "question": "What feature makes it easy to find public charging stations, and is exclusively available only to GM EV owners?",
+      "choices": [
+        "Google Maps is recognized as the best source for EV charging station information.",
+        "Several EV web forums offer advice on how to find charging stations",
+        "GM’s Energy Assist “Route Planner” smartphone function makes it easy to find charging stations."
+      ],
+      "answer": [
+        "GM’s Energy Assist “Route Planner” smartphone function makes it easy to find charging stations."
+      ],
+      "reason": "GM’s Energy Assist ”Route Planner” smartphone function, available only in the GM myBrand apps, can help plan a trip that includes any needed stops for charging.",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 4,
+      "question": "Which charging connector enables DC Fast Charging on GM EVs equipped with DC Fast Charging capability?",
+      "choices": [
+        "CCS1",
+        "J1772",
+        "CHAdeMO"
+      ],
+      "answer": [
+        "CCS1"
+      ],
+      "reason": "The CCS1 connector includes the J1772 contacts for Level 1 (120-volt) and Level 2 (240-volt) alternating current (AC) charging and adds two large contacts for direct current (DC) Fast Charging.",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 5,
+      "question": "Your customer asks: If I drive 40 miles per day, do I need Level 2 charging? What’s the best answer?",
+      "choices": [
+        "At 40 miles per day or less, if you can charge at night, Level 1 will work just fine for you.",
+        "Because you drive more than the national average of 32 miles per day, Level 2 is what you need.",
+        "If you drive 100 miles or less per day, Level 1 charging is all you need."
+      ],
+      "answer": [
+        "At 40 miles per day or less, if you can charge at night, Level 1 will work just fine for you."
+      ],
+      "reason": " At 40 miles per day or less, if you can charge at night, Level 1 will work just fine for you.  ",
+      "factoid": "If there’s already a 15-amp outlet (them most common type) near where your customer parks their GM EV, nothing more is needed for Level 1 charging with the vehicle’s portable charge cord.",
+      "imgsrc": ""
+    },
+    {
+      "id": 6,
+      "question": "Which of the choices below identifies a GM EV feature that improves extreme weather performance and enhances battery life?",
+      "choices": [
+        "Airflow Temperature Control",
+        "Radiant Passenger Heating",
+        "Active Thermal Management"
+      ],
+      "answer": [
+        "Active Thermal Management"
+      ],
+      "reason": "Active Thermal Management uses a liquid cooling system to maintain optimal temperatures, extending range and battery life.  The system can also pre-condition the battery while plugged in to maximize range in hot or cold weather.",
+      "factoid": "Active Thermal Management uses a liquid cooling system to maintain optimal temperatures, extending range and battery life.  The system can also pre-condition the battery while plugged in to maximize range in hot or cold weather.",
+      "imgsrc": ""
+    },
+    {
+      "id": 7,
+      "question": "What features, available on most GM EVs, should be used to maximize range when driving in cold weather?",
+      "choices": [
+        "Floormat radiant heaters",
+        "Seat and steering wheel heaters",
+        "Cabin air filter and air ionizer"
+      ],
+      "answer": [
+        "Seat and steering wheel heaters"
+      ],
+      "reason": "Seat and steering wheel heaters use less energy than the climate control system, and usually allow customers to feel comfortable at a lower climate control setting. This saves battery power, extending range.",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 8,
+      "question": "Your customer asks: If I come home with a really low battery, will  Level 1 charging still give me enough charge for my 40-mile round-trip commute to work tomorrow? What’s your advice?",
+      "choices": [
+        "Your best bet is to take a little time before you get home and plug into a public Level 2 charging station for an hour or so.",
+        "Level 1 should give you the 40 miles of charge you need, but not much reserve. You may want to consider installing a Level 2 charging station.",
+        "You’ll want to stop at a DC Fast Charging station before you get home to charge all the way back to 100%, to make sure you’re ready for work."
+      ],
+      "answer": [
+        "Level 1 should give you the 40 miles of charge you need, but not much reserve. You may want to consider installing a Level 2 charging station."
+      ],
+      "reason": "Level 1 should give you the 40 miles of charge you need, but not much reserve. You may want to consider installing a Level 2 charging station.",
+      "factoid": "",
+      "imgsrc": ""
+    },
+    {
+      "id": 9,
+      "question": "GM EV owners have a number of online resources for EV charging information. Which U.S. government site can help them find charging stations from all charging networks?",
+      "choices": [
+        "U.S. Department of Commerce Infrastructure information site",
+        "The U.S Department of Energy’s Alternative Fueling Station Locator",
+        "U.S. Department of Transportation’s Automated Vehicles Activities site"
+      ],
+      "answer": [
+        "The U.S Department of Energy’s Alternative Fueling Station Locator"
+      ],
+      "reason": "The U.S Department of Energy’s Alternative Fueling Station Locator.",
+      "factoid": "The U.S Department of Energy’s Alternative Fueling Station Locator uses an interactive charging station map. Users can select specific charging networks and connector styles, and plan trips that include convenient charging stops.",
+      "imgsrc": ""
+    }
+  ]
+}
