@@ -1,48 +1,66 @@
 <div class="box">
-  <div class="row header">
-    <h1>My Profile</h1>
+  <div class="row header" style="text-align: center">
+    <p>My Profile</p>
   </div>
+
+  <div id="profilePicture" style="display: block; margin: auto; border-radius: 100px">
+<!--    <img src="assets/user-pic-large.png" >-->
+  </div>
+
   <div class="row content">
-    <div id="personalInfoContainer" fxLayout="row">
-      <div id="personalInfoTitle" class="left-align">
-        Personal Info
+    <div id="personalInfoContainer" style="display: flex; flex-direction: column; justify-content: space-between">
+      <div style="display: flex; justify-content: space-between">
+        <div id="personalInfoTitle" class="left-align">
+          Personal Info
+        </div>
+        <div id="profileEditButton">
+          <button mat-icon-button (click)="openProfileEditor()" title="Open Profile Editor" id="openProfileEditButton">
+            <i class="material-icons" id="editButtonIcon">edit</i>
+          </button>
+        </div>
       </div>
-      <div id="profileEditButton">
-        <button mat-icon-button (click)="openProfileEditor()" title="Open Profile Editor" id="openProfileEditButton">
-          <i class="material-icons" id="editButtonIcon">edit</i>
-        </button>
+
+      <div id="userProfileName" style="height: 40px;">
+        <div>{{userProfileName}}</div>
       </div>
-  
-      <div id="userProfileName" fxLayout="column">
-        <span>{{userProfileName}}</span>
+
+      <div id="userRoleName" style="height: 40px;">
+        <div>{{userRole}}</div>
       </div>
-      <div id="userAddress">
-        <span>{{userAddress}}</span>
+
+      <div id="userAddress" style="height: 60px;">
+        <div>{{userAddress}}</div>
       </div>
-  
-      <div id="userPhoneNumber" fxLayout="column">
-        <span>{{userPhoneNumber}}</span>
-  
+
+      <div id="userPhoneNumber" style="height: 20px;">
+        <div>{{userPhoneNumber}}</div>
       </div>
-      <div id="userEmail">
-        <span>{{userEmail}}</span>
+
+      <div id="userEmail" style="height: 20px;">
+        <div>{{userEmail}}</div>
       </div>
     </div>
   </div>
   <div class="row footer">
-    <div id="loginInfoContainer" fxLayout="row">
-      <div>
-        <p>Login Info</p>
-      </div>
-  
-      <div>
-        <div id="login" fxLayout="row">
-          <span>Login</span>
-          <span>{{userUsername}}</span>
+    <div id="loginInfoContainer">
+      <div style="display: flex; justify-content: space-between">
+        <div id="loginInfoTitle" class="left-align">
+          Login Info
         </div>
-        <div id="password">
-          <span>Password</span>
-          <span>**********</span>
+        <div id="loginInfoEditButton">
+          <button mat-icon-button (click)="openProfileEditor()" title="Open Profile Editor" id="openLoginInfoEditButton">
+            <i class="material-icons" id="editButtonIcon2">edit</i>
+          </button>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; justify-content: space-between;" >
+        <div id="login" style="display: flex; flex-direction: column; height:40px">
+          <div>Login</div>
+          <div>{{userUsername}}</div>
+        </div>
+        <div id="password" style="display: flex; flex-direction: column; height:40px">
+          <div>Password</div>
+          <div>**********</div>
         </div>
       </div>
     </div>
