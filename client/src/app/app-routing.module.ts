@@ -9,6 +9,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component';
 import { UploadComponent } from './upload/upload.component';
 import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },
   { path: 'selector', component: SelectorComponent },
+  { path: 'dashboard', component: DashboardComponent},
   { path: '**', component: NoPageFoundComponent }
 ];
 
