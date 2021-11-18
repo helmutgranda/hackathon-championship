@@ -24,6 +24,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {LearningCourseResultComponent} from "./learning-course-result/learning-course-result.component";
 import { UploadComponent } from './upload/upload.component';
+import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
+import { EvacademyHeaderComponent } from './components/evacademy-header/evacademy-header.component';
 
 
 const appRoutes: Routes = [
@@ -42,7 +44,9 @@ const appRoutes: Routes = [
     EvAcademyComponent,
     ProfileComponent,
     LearningCourseResultComponent,
-    UploadComponent
+    UploadComponent,
+    EvAcademyWeatherComponent,
+    EvacademyHeaderComponent
   ],
   imports: [
     BrowserModule,
