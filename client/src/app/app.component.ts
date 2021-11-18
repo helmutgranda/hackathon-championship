@@ -23,6 +23,7 @@ export class AppComponent implements AfterViewInit {
         this.url = event.url;
       }
     })
+  }
 
   ngAfterViewInit(){
     // this.observer.observe([Breakpoints.XSmall, Breakpoints.Medium]).subscribe((res) => {
