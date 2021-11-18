@@ -26,6 +26,7 @@ import {LearningCourseResultComponent} from "./learning-course-result/learning-c
 import { UploadComponent } from './upload/upload.component';
 import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
 import { EvacademyHeaderComponent } from './components/evacademy-header/evacademy-header.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 const appRoutes: Routes = [
@@ -60,7 +61,8 @@ const appRoutes: Routes = [
     MatIconModule,
     AppRoutingModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatMenuModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

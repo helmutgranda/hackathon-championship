@@ -3,9 +3,16 @@
     <div>
         <a routerLink="/ev-academy"><img style="height: 15px;" src="/assets/evacademy.png" /></a>
     </div>
-    <div>
-        <img style="border-radius: 1rem; border:1px solid #FFFFFF; width:20px; height:20px" src="{{avatar}}" />
+    <div [matMenuTriggerFor]="menu">
+      <img style="border-radius: 1rem; border:1px solid #FFFFFF; width:20px; height:20px" src="{{avatar}}" />
     </div>
+    <mat-menu #menu="matMenu" class="customize">
+
+      <button routerLink="/dashboard" mat-menu-item class="mat-menu-content">My Dashboard</button>
+      <button routerLink="/profile"mat-menu-item class="mat-menu-content">My Profile</button>
+      <button routerLink="/**"mat-menu-item class="mat-menu-content">Settings</button>
+      <button routerLink="/login" mat-menu-item class="mat-menu-content">Logout</button>
+    </mat-menu>
 </div>
 
 
