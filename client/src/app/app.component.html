@@ -1,5 +1,7 @@
 
 <!-- <app-navigation></app-navigation>
 <app-dashboard></app-dashboard> -->
-<app-default-header *ngIf="url !== '/login'"></app-default-header>
+<div class="header-container">
+<app-default-header *ngIf="url !== '/login' && url !== '/profile' && url !== '/'"></app-default-header>
+</div>
 <router-outlet></router-outlet>
