@@ -21,7 +21,8 @@ import { DefaultHeaderComponent } from './components/default-header/default-head
 import { EvAcademyComponent } from './ev-academy/ev-academy.component';
 import {ProfileComponent} from "./profile/profile.component";
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input'
+import {MatInputModule} from '@angular/material/input';
+import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component'
 
 
 const appRoutes: Routes = [
@@ -38,7 +39,8 @@ const appRoutes: Routes = [
     NoPageFoundComponent,
     DefaultHeaderComponent,
     EvAcademyComponent,
-    ProfileComponent
+    ProfileComponent,
+    EvAcademyChargingComponent
   ],
   imports: [
     BrowserModule,

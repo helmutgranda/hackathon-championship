@@ -1,0 +1,13 @@
+.option-container {
+    display: flex;
+    background: #454545;
+    margin: 16px auto;
+}
+
+.option-container img{
+margin-right: 8px;
+}
+
+.option-container div {
+
+}
