@@ -3,7 +3,6 @@
 <app-dashboard></app-dashboard> -->
 
 <div class="header-container">
-<app-default-header></app-default-header>
+<app-default-header *ngIf="url !== '/login'"></app-default-header>
 </div>
-<app-profile></app-profile>
-<!--<router-outlet></router-outlet>-->
+<router-outlet></router-outlet>
