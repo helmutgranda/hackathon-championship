@@ -26,22 +26,6 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(){
-    // this.observer.observe([Breakpoints.XSmall, Breakpoints.Medium]).subscribe((res) => {
-    //   if(res.breakpoints[Breakpoints.XSmall]){
-    //     this.navComponent.collapseSideNav();
-    //   } else if (res.breakpoints[Breakpoints.Medium]) {
-    //     this.navComponent.expandSideNav();
-    //   }
-    // });
   }
-
-
-  sideNavToggle(event: any) {
-    // this.navComponent.sideNavToggle();
-
-  }
-
-
-
 }
 
