@@ -6,3 +6,28 @@
     justify-content: space-around;
     width: 100vw;
 }
+
+::ng-deep.cdk-overlay-pane{
+  transform: translate(80px, -632px);
+}
+
+::ng-deep.customize{
+  background-color: #6A6A6A;
+}
+
+.mat-menu-content{
+  background-color: #6A6A6A;
+  font-family: Overpass;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  /* or 20px */
+
+  letter-spacing: -0.024em;
+  color: #FFFFFF;
+}
+
+::ng-deep.mat-menu-pannel{
+  max-width: 200px !important;
+}
