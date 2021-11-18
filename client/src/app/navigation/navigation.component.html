@@ -1,12 +1,46 @@
-<mat-sidenav-container class="simple-nav">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
-  (closed)="events.push('close!')">SideNav Content</mat-sidenav>
-
+<mat-sidenav-container class="vega-nav-container">
   <div>
-    <button mat-button (click)="sidenav.toggle()">Toggle Nav</button>
+    <button mat-icon-button (click)="sidenav.toggle()" title="Expand/Collapse Sidebar" id="navSidebarButton">
+      <i class="material-icons" id="navSidebarMenuIcon">menu</i>
+<!--      Toggle Nav-->
+
+    </button>
   </div>
+  <mat-sidenav #sidenav class="vega-nav-list" mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+  (closed)="events.push('close!')">
+    <mat-nav-list>
+      <div>
+        <mat-list-item>
+          <span>Home</span>
+        </mat-list-item>
+      </div>
+
+      <div>
+        <mat-list-item>
+          <span>Profile</span>
+        </mat-list-item>
+      </div>
+      <div>
+        <mat-list-item>
+          <span>Leaderboard</span>
+        </mat-list-item>
+      </div>
+      <div>
+        <mat-list-item>
+          <span>Settings</span>
+        </mat-list-item>
+      </div>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+
+
 <!--  <mat-sidenav-content>-->
 <!--   -->
 
 <!--  </mat-sidenav-content>-->
+
+
 </mat-sidenav-container>
+
