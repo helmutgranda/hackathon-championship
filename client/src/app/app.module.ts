@@ -12,6 +12,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatButtonModule} from "@angular/material/button";
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatIconModule} from "@angular/material/icon";
 
 
 const appRoutes: Routes = [
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
     MatSidenavModule,
     RouterModule.forRoot(appRoutes),
     MatCheckboxModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
