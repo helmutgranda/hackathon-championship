@@ -23,6 +23,7 @@ import {ProfileComponent} from "./profile/profile.component";
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component'
+import { LearningCourseBadgeComponent } from './learning-course-badge/learning-course-badge.component'
 
 
 const appRoutes: Routes = [
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     DefaultHeaderComponent,
     EvAcademyComponent,
     ProfileComponent,
-    EvAcademyChargingComponent
+    EvAcademyChargingComponent,
+    LearningCourseBadgeComponent
   ],
   imports: [
     BrowserModule,
