@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -14,13 +15,17 @@ import { NgModule } from '@angular/core';
 export class EvAcademyChargingComponent implements OnInit {
 
   voted: Boolean = false;
+  
+
+  goNext() {
+    this.router.navigate(['/ev-academy-amperage'])
+  }
 
   hasVotedMethod(val:Boolean) {
     this.voted = val;
-    console.log(this.voted)
   }
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }

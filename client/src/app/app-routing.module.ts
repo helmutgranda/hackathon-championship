@@ -11,13 +11,15 @@ import { UploadComponent } from './upload/upload.component';
 import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import { LearningExperienceOneComponent } from './learning-experience-one/learning-experience-one.component';
+import { LearningCourseResultComponent } from './learning-course-result/learning-course-result.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'ev-academy', component: EvAcademyComponent },
   { path: 'ev-academy-charging', component: EvAcademyChargingComponent },
   { path: 'ev-academy-weather', component: EvAcademyWeatherComponent },
-  { path: 'learning-experience', component: LearningExperienceOneComponent },
+  { path: 'ev-academy-amperage', component: LearningExperienceOneComponent },
+  { path: 'ev-result', component: LearningCourseResultComponent },
   { path: 'upload', component: UploadComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },
