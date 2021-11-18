@@ -9,6 +9,7 @@ public class Quiz {
     private String factoid;
     private String reason;
     private String imgsrc;
+    private int attempts;
 
     public int getId() {
         return id;
@@ -64,5 +65,13 @@ public class Quiz {
 
     public void setImgsrc(String imgsrc) {
         this.imgsrc = imgsrc;
+    }
+
+    public int getAttempts() {
+        return attempts;
+    }
+
+    public void setAttempts(int attempts) {
+        this.attempts = attempts;
     }
 }
