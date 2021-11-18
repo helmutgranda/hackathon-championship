@@ -1,9 +1,10 @@
 <div id="dashboardContainer" style="display:flex; flex-direction: column; justify-content: space-between">
   <div class="row header" style="text-align: center">
-    <p>Dashboard</p>
+    <div>Dashboard</div>
   </div>
-  <div id="dashFeed" class="center-content">
+  <div id="dashFeedContainer" class="center-content">
     <!--    Dashboard feed goes here-->
+    <div id="dashFeed"></div>
   </div>
 
   <div id="awardsContainer">
@@ -12,15 +13,18 @@
     </div>
     <div style="display: flex; flex-direction: row; align-content: space-between" >
       <div id="pointsContainer">
-        <div>Hack</div>
+        <div id="points"></div>
+        <div style="text-align: center">Points</div>
       </div>
 
       <div id="badgesContainer">
-        <div>Team</div>
+        <div id="badges"></div>
+        <div style="text-align: center">Badges</div>
       </div>
 
       <div id="levelsContainer">
-        <div>Vega</div>
+        <div id="levels"></div>
+        <div style="text-align: center">Levels</div>
       </div>
 
     </div>
@@ -29,27 +33,15 @@
     </div>
   </div>
 
-  <div id="leaderboardContainer">
+  <div id="leaderboardContainer" class="row footer">
     <div id="leaderboardTitle">
       <div>Leaderboard</div>
     </div>
 
-    <div id="leaderboard">
-      <div id="nameColumn">
-
-      </div>
-      <div id="pointsColumn">
-
-      </div>
-      <div id="badgesColumn">
-
-      </div>
-      <div id="levelColumn">
-
-      </div>
+    <div id="leaderboard" style="display: block; margin: auto">
 
     </div>
-    <div style="text-align: center; color: #05C3DD">
+    <div style="text-align: center;">
       <a (click)="openReport()">Report</a>
     </div>
   </div>
