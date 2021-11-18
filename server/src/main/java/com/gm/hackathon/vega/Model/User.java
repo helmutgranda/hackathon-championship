@@ -16,6 +16,7 @@ public class User {
     private int percent_completed;
     private String dealership;
     private String state;
+    private boolean satisfied;
 
     public int getId() {
         return id;
@@ -135,5 +136,13 @@ public class User {
 
     public void setState(String state) {
         this.state = state;
+    }
+
+    public boolean isSatisfied() {
+        return satisfied;
+    }
+
+    public void setSatisfied(boolean satisfied) {
+        this.satisfied = satisfied;
     }
 }
