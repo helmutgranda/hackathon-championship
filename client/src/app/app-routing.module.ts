@@ -10,12 +10,14 @@ import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-cha
 import { UploadComponent } from './upload/upload.component';
 import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
 import {DashboardComponent} from "./dashboard/dashboard.component";
+import { LearningExperienceOneComponent } from './learning-experience-one/learning-experience-one.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'ev-academy', component: EvAcademyComponent },
   { path: 'ev-academy-charging', component: EvAcademyChargingComponent },
   { path: 'ev-academy-weather', component: EvAcademyWeatherComponent },
+  { path: 'learning-experience', component: LearningExperienceOneComponent },
   { path: 'upload', component: UploadComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearningExperienceOneComponent implements OnInit {
 
+  customfunction() {
+    console.log("called");
+  }
   constructor() { }
 
   ngOnInit(): void {
