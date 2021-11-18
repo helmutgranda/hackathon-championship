@@ -17,7 +17,7 @@
   flex: 0 auto;
 }
 
-#personalInfoTitle{
+#personalInfoTitle, #loginInfoTitle{
   /* Vega Section Title */
 
   font-family: Roboto;
@@ -39,61 +39,29 @@
 
 }
 
-#userProfileName{
-  font-family: GM Global Sans;
-  font-size: 16px;
-  line-height: 20px;
-  /* or 125% */
-
-  display: flex;
-  align-items: center;
+#profilePicture{
+  width: 125px;
+  height: 125px;
+  background-image: url('src/assets/user-pic-large.png');
+  background-size: cover;
+  display: block;
 }
 
-#userRole{
+#userProfileName, #userRoleName, #userAddress{
   font-family: GM Global Sans;
   font-size: 16px;
   line-height: 20px;
+
   /* or 125% */
 
-  display: flex;
-  align-items: center;
-
-  color: #FFFFFF;
 }
 
-#userAddress{
+#userPhoneNumber, #userEmail{
   font-family: GM Global Sans;
   font-size: 16px;
   line-height: 20px;
+
   /* or 125% */
-
-  display: flex;
-  align-items: center;
-
-  color: #FFFFFF;
-}
-
-
-#userPhoneNumber{
-  font-family: GM Global Sans;
-  font-size: 16px;
-  line-height: 20px;
-  /* or 125% */
-
-  display: flex;
-  align-items: center;
-
-  color: #05C3DD;
-}
-
-#userEmail{
-  font-family: GM Global Sans;
-  font-size: 16px;
-  line-height: 20px;
-  /* or 125% */
-
-  display: flex;
-  align-items: center;
 
   color: #05C3DD;
 }
@@ -124,22 +92,15 @@
   line-height: 23px;
   /* or 144% */
 
-  display: flex;
-  align-items: center;
-
   /* dark-mode/neutral/white */
 
   color: #FFFFFF;
 }
 
-#login,password{
+#login,#password{
   font-family: GM Global Sans;
   font-size: 16px;
   line-height: 20px;
-  /* or 125% */
-
-  display: flex;
-  align-items: center;
 
   /* dark-mode/neutral/white */
   color: #FFFFFF;
@@ -162,7 +123,7 @@
   height: 100vh;
 }
 .box .row {
-  border: 1px dotted #0313fc;
+
 }
 .box .row.header {
   flex: auto;
