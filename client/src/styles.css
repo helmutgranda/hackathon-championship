@@ -24,3 +24,12 @@ body {
 .ev-blue-background{
     background-color: #05C3DD;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #05C3DD;
+}
