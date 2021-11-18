@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-learning-experience-one',
@@ -11,12 +12,12 @@ export class LearningExperienceOneComponent implements OnInit {
     document.getElementById("hidden")!.style.display="block";
   }
   nextPage(){
-    window.location.href="./ev-academy-charging";
+    this.router.navigate(['/ev-result'])
   }
   previousPage(){
-    window.location.href="./login";
+    this.router.navigate(['/login'])
   }
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
