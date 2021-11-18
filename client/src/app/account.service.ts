@@ -35,4 +35,8 @@ export class AccountService {
   getUser(){
     return this.user;
   }
+
+  getUserFresh(){
+    return this.http.get<User>("http://localhost:8080/user/13");
+  }
 }
