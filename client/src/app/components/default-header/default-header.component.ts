@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AccountService } from '../../account.service';
+import { User } from '../../user.model';
 
 @Component({
   selector: 'app-default-header',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DefaultHeaderComponent implements OnInit {
 
-  constructor() { }
+  name: String = "Emily";
+  avatar: String = "/assets/user-pic.png";
+
+  constructor(private accountService : AccountService) {
+  }
 
   ngOnInit(): void {
+    this.accountService.getUserFresh().subscribe((data : User) => {
+      this.name = data.first_name;
+      this.avatar = data.avatar;
+    });
   }
 
 }
