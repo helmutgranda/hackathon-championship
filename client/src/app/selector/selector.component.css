@@ -1,0 +1,8 @@
+.image-landing {
+    padding: 16px;
+    text-align: center;
+}
+
+.image-landing > a > img {
+    max-height: 44px;
+}
