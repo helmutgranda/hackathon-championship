@@ -30,6 +30,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component';
 import {MatMenuModule} from "@angular/material/menu";
+import { LyrqVideoComponent } from './lyrq-video/lyrq-video.component';
 
 
 const appRoutes: Routes = [
@@ -56,6 +57,7 @@ const materialModules = [
     UploadComponent,
     EvAcademyWeatherComponent,
     EvacademyHeaderComponent,
+    LyrqVideoComponent,
   ],
   imports: [
     BrowserModule,
