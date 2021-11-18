@@ -1,0 +1,78 @@
+#userPic {
+  float: right;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.genericBox {
+  background-color:#454545;
+  width:90%;
+  border-radius:2%;
+  margin:auto;
+  padding:2%;
+  margin-top:5%;
+  margin-bottom:5%;
+}
+.navigationBar {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom:5%;
+}
+#achievements {
+  height:30%;
+}
+#achievements p {
+  text-align:center;
+  font-weight:bold;
+}
+#achievements img {
+  margin:0 auto;
+  display:block;
+}
+#challengeButton{
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  padding-top:2.5%;
+  padding-bottom:2.5%;
+  width: 80%;
+  height: 100%;
+  border: 2px solid #05C3DD;
+  border-radius: 40px;
+  background: #05C3DD;
+  color: black;
+  font-weight:bold;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+#levelText{
+  text-align:center;
+  font-weight:bold;
+}
+
+
+
+
+
+.vega-nav-container{
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+.vega-nav-list{
+  color: white;
+  background-color: #242322;
+  width: 200px;
+}
+
+.vega-nav-list-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+

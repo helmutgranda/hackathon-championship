@@ -2,7 +2,7 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {NavigationComponent} from "./navigation/navigation.component";
 import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
 import { Router, NavigationEnd } from '@angular/router';
-
+import { AccountService } from './account.service';
 
 
 @Component({
@@ -17,7 +17,7 @@ export class AppComponent implements AfterViewInit {
   private navComponent!: NavigationComponent;
   public url: any;
 
-  constructor(private observer: BreakpointObserver, private router: Router) {
+  constructor(private observer: BreakpointObserver, private router: Router, private accountService: AccountService) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.url = event.url;

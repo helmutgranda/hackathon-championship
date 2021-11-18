@@ -20,6 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DefaultHeaderComponent } from './components/default-header/default-header.component';
 import { EvAcademyComponent } from './ev-academy/ev-academy.component';
 import {ProfileComponent} from "./profile/profile.component";
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input'
 
 
 const appRoutes: Routes = [
@@ -48,7 +50,9 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
