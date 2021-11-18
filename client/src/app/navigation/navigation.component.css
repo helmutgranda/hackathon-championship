@@ -10,4 +10,13 @@
 .vega-nav-list{
   color: white;
   background-color: #242322;
+  width: 200px;
 }
+
+.vega-nav-list-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
