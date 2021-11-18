@@ -1,0 +1,157 @@
+.center-align{
+  text-align: center;
+}
+
+.center-content{
+  align-content: center;
+}
+
+.left-align{
+  text-align: left;
+}
+
+#profileContainer{
+  background-color: #303030;
+  color: white;
+  min-height: 100vw;
+  flex: 0 auto;
+}
+
+#personalInfoTitle{
+  /* Vega Section Title */
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 144% */
+
+  display: flex;
+  align-items: center;
+
+  /* dark-mode/neutral/white */
+
+  color: #FFFFFF;
+}
+
+#openProfileEditButton{
+
+}
+
+#userProfileName{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+}
+
+#userRole{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+#userAddress{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+
+  color: #FFFFFF;
+}
+
+
+#userPhoneNumber{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+
+  color: #05C3DD;
+}
+
+#userEmail{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+
+  color: #05C3DD;
+}
+
+#personalInfoContainer{
+  background-color: #454545;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+#loginInfoContainer{
+  background-color: #454545;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+#loginTitle{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  /* or 144% */
+
+  display: flex;
+  align-items: center;
+
+  /* dark-mode/neutral/white */
+
+  color: #FFFFFF;
+}
+
+#login,password{
+  font-family: GM Global Sans;
+  font-size: 16px;
+  line-height: 20px;
+  /* or 125% */
+
+  display: flex;
+  align-items: center;
+
+  /* dark-mode/neutral/white */
+  color: #FFFFFF;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.flex-column {
+  padding: 5px;
+  min-width: 150px;
+}

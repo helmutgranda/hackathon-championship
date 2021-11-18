@@ -1,0 +1,56 @@
+<div id="profileContainer" fxLayout="row" autosize>
+  <div class="center-align" fxFlex="100">
+    <h1>My Profile</h1>
+  </div>
+  <div id="profilePicture" class="center-content">
+<!--    Profile Pic Goes Here-->
+  </div>
+
+  <div id="personalInfoContainer" fxLayout="row">
+    <div id="personalInfoTitle" class="left-align">
+      Personal Info
+    </div>
+    <div id="profileEditButton">
+      <button mat-icon-button (click)="openProfileEditor()" title="Open Profile Editor" id="openProfileEditButton">
+        <i class="material-icons" id="editButtonIcon">edit</i>
+      </button>
+    </div>
+
+    <div id="userProfileName" fxLayout="column">
+      <span>{{userProfileName}}</span>
+    </div>
+    <div id="userAddress">
+      <span>{{userAddress}}</span>
+    </div>
+
+    <div id="userPhoneNumber" fxLayout="column">
+      <span>{{userPhoneNumber}}</span>
+
+    </div>
+    <div id="userEmail">
+      <span>{{userEmail}}</span>
+    </div>
+  </div>
+
+  <div id="loginInfoContainer" fxLayout="row">
+    <div>
+      <p>Login Info</p>
+    </div>
+
+    <div>
+      <div id="login" fxLayout="row">
+        <span>Login</span>
+        <span>{{userUsername}}</span>
+      </div>
+      <div id="password">
+        <span>Password</span>
+        <span>**********</span>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!--Login info-->
