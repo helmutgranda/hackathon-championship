@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { SelectorComponent } from './selector/selector.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { DefaultHeaderComponent } from './components/default-header/default-header.component';
 
 
 const appRoutes: Routes = [
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     DashboardComponent,
     LoginComponent,
     SelectorComponent,
-    NoPageFoundComponent
+    NoPageFoundComponent,
+    DefaultHeaderComponent
   ],
   imports: [
     BrowserModule,

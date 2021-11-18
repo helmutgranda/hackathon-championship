@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+    background:  #303030;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.ev-blue {
+    color: #05C3DD;
+}
