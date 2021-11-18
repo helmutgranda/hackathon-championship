@@ -17,6 +17,8 @@ import { LoginComponent } from './login/login.component';
 import { SelectorComponent } from './selector/selector.component';
 import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
 import { AppRoutingModule } from './app-routing.module';
+import { MatInputModule } from '@Angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 const appRoutes: Routes = [
@@ -43,7 +45,9 @@ const appRoutes: Routes = [
     MatCheckboxModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatInputModule,
+    MatFormFieldModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]

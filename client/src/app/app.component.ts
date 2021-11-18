@@ -1,6 +1,7 @@
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {NavigationComponent} from "./navigation/navigation.component";
 import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
+import { AccountService } from './account.service';
 
 
 @Component({
@@ -14,7 +15,7 @@ export class AppComponent implements AfterViewInit {
   @ViewChild(NavigationComponent, {static:false})
   private navComponent!: NavigationComponent;
 
-  constructor(private observer: BreakpointObserver) {
+  constructor(private observer: BreakpointObserver, private accountService: AccountService) {
   }
 
   ngAfterViewInit(){
