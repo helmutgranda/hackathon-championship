@@ -1,11 +1,11 @@
 package com.gm.hackathon.vega.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.gm.hackathon.vega.Model.Quiz;
 import com.gm.hackathon.vega.Model.User;
 import org.springframework.core.io.ClassPathResource;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -49,5 +49,25 @@ public class UserService {
         }
 
         return null;
+    }
+
+    public List<User> getUsersByState(String state){
+        List<User> usersByState = new ArrayList<>();
+        for(User user : users){
+            if(user.getState().equalsIgnoreCase(state)){
+                usersByState.add(user);
+            }
+        }
+        return usersByState;
+    }
+
+    public List<User> getUsersByDealership(String dealership){
+        List<User> usersByDealership = new ArrayList<>();
+        for(User user : users){
+            if(user.getDealership().equalsIgnoreCase(dealership)){
+                usersByDealership.add(user);
+            }
+        }
+        return usersByDealership;
     }
 }

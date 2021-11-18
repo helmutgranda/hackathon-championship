@@ -13,7 +13,8 @@
     ],
     "reason": "",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 26175
   },
   {
     "id": 1,
@@ -28,7 +29,8 @@
     ],
     "reason": "",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 12856
   },
   {
     "id": 2,
@@ -43,7 +45,8 @@
     ],
     "reason": "The Dual Level Charge Cord provides 32 amps, for 15-30 miles of range per hour of charge. Professionally installed Level 2 charging stations can offer faster charging.",
     "factoid": "Owners with long commutes or less time to charge their GM EVs may opt for a more powerful, professionally-installed Level 2 charging station.",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 24520
   },
   {
     "id": 3,
@@ -58,7 +61,8 @@
     ],
     "reason": "GM’s Energy Assist ”Route Planner” smartphone function, available only in the GM myBrand apps, can help plan a trip that includes any needed stops for charging.",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 17450
   },
   {
     "id": 4,
@@ -73,7 +77,8 @@
     ],
     "reason": "The CCS1 connector includes the J1772 contacts for Level 1 (120-volt) and Level 2 (240-volt) alternating current (AC) charging and adds two large contacts for direct current (DC) Fast Charging.",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 8120
   },
   {
     "id": 5,
@@ -88,7 +93,8 @@
     ],
     "reason": " At 40 miles per day or less, if you can charge at night, Level 1 will work just fine for you.  ",
     "factoid": "If there’s already a 15-amp outlet (them most common type) near where your customer parks their GM EV, nothing more is needed for Level 1 charging with the vehicle’s portable charge cord.",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 15623
   },
   {
     "id": 6,
@@ -103,7 +109,8 @@
     ],
     "reason": "Active Thermal Management uses a liquid cooling system to maintain optimal temperatures, extending range and battery life.  The system can also pre-condition the battery while plugged in to maximize range in hot or cold weather.",
     "factoid": "Active Thermal Management uses a liquid cooling system to maintain optimal temperatures, extending range and battery life.  The system can also pre-condition the battery while plugged in to maximize range in hot or cold weather.",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 56122
   },
   {
     "id": 7,
@@ -118,7 +125,8 @@
     ],
     "reason": "Seat and steering wheel heaters use less energy than the climate control system, and usually allow customers to feel comfortable at a lower climate control setting. This saves battery power, extending range.",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 6453
   },
   {
     "id": 8,
@@ -133,7 +141,8 @@
     ],
     "reason": "Level 1 should give you the 40 miles of charge you need, but not much reserve. You may want to consider installing a Level 2 charging station.",
     "factoid": "",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 45123
   },
   {
     "id": 9,
@@ -148,6 +157,7 @@
     ],
     "reason": "The U.S Department of Energy’s Alternative Fueling Station Locator.",
     "factoid": "The U.S Department of Energy’s Alternative Fueling Station Locator uses an interactive charging station map. Users can select specific charging networks and connector styles, and plan trips that include convenient charging stops.",
-    "imgsrc": ""
+    "imgsrc": "",
+    "attempts" : 1156
   }
 ]
