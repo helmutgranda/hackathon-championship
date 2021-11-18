@@ -138,7 +138,7 @@ public class User {
         this.state = state;
     }
 
-    public boolean isSatisfied() {
+    public Boolean isSatisfied() {
         return satisfied;
     }
 
