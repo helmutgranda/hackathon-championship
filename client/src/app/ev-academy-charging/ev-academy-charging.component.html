@@ -3,21 +3,25 @@
 <div>What is the fastests at-home charging option?</div>
 </header>
 <div class="container">
-<div class="option-container">
-    <img src="/assets/option-a.png" />
+<div class="option-container" [ngClass]="{'hasVoted': voted}"  (click)="hasVotedMethod(true)">
+    <img  src="/assets/option-a.png" />
     <div>Level 1 (120 volts)</div>
 </div>
 
-<div class="option-container">
+<div class="option-container" [ngClass]="{'hasVoted': voted}" (click)="hasVotedMethod(true)">
     <img src="/assets/option-b.png" />
     <div>Level 2 (240 volts)</div>
 </div>
 
-<div class="option-container">
+<div class="option-container" (click)="hasVotedMethod(true)">
     <img src="/assets/option-c.png" />
     <div>DC Fast Charging</div>
 </div>
 <div class="link-container">
     <a href="/upload">Upload picture of your charging setup</a>
+</div>
+<div class="next-prev-container">
+    <a class="previous">Previous</a>
+    <button mat-raised-button class="next">Next</button>
 </div>
 </div>
