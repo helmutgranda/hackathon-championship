@@ -1,27 +1,37 @@
-<div id="dashboardContainer" >
-  <div class="center-align">
+<div id="dashboardContainer" style="display:flex; flex-direction: column; justify-content: space-between">
+  <div class="row header" style="text-align: center">
     <p>Dashboard</p>
   </div>
   <div id="dashFeed" class="center-content">
     <!--    Dashboard feed goes here-->
   </div>
 
-  <div id="myAwardsContainer">
+  <div id="awardsContainer">
     <div id="myAwardsTitle" class="left-align">
       My Awards
     </div>
-    <div id="pointsContainer">
+    <div style="display: flex; flex-direction: row; align-content: space-between" >
+      <div id="pointsContainer">
+        <div>Hack</div>
+      </div>
+
+      <div id="badgesContainer">
+        <div>Team</div>
+      </div>
+
+      <div id="levelsContainer">
+        <div>Vega</div>
+      </div>
 
     </div>
-
-    <div id="badgesContainer">
-
+    <div style="text-align: center; color: #05C3DD">
+      <a (click)="openShare()">Share</a>
     </div>
-
+  </div>
 
   <div id="leaderboardContainer">
-    <div>
-      <p>Leaderboard</p>
+    <div id="leaderboardTitle">
+      <div>Leaderboard</div>
     </div>
 
     <div id="leaderboard">
@@ -38,6 +48,9 @@
 
       </div>
 
+    </div>
+    <div style="text-align: center; color: #05C3DD">
+      <a (click)="openReport()">Report</a>
     </div>
   </div>
 

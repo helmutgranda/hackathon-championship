@@ -1,0 +1,57 @@
+.center-align{
+  text-align: center;
+}
+
+.center-content{
+  align-content: center;
+}
+
+.left-align{
+  text-align: left;
+}
+
+
+#myAwardsTitle, #leaderboardTitle
+
+#dashboardContainer{
+  background-color: #303030;
+  color: white;
+  min-height: 100vw;
+  flex: 0 auto;
+}
+
+#awardsContainer, #leaderboardContainer{
+  background-color: #454545;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+}
+
+#pointsContainer, #badgesContainer, #levelsContainer{
+  width: 800px;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+.box .row {
+border: blue;
+}
+.box .row.header {
+  flex: auto;
+  margin: 16px;
+}
+.box .row.content {
+  flex: 33%;
+  background: #454545;
+  margin: 16px;
+}
+.box .row.footer {
+  flex: 23%;
+  background: #454545;
+  margin: 16px;
+}
