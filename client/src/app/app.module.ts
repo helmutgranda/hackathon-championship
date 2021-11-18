@@ -25,11 +25,20 @@ import {MatInputModule} from '@angular/material/input';
 import {LearningCourseResultComponent} from "./learning-course-result/learning-course-result.component";
 import { UploadComponent } from './upload/upload.component';
 import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
+import { EvacademyHeaderComponent } from './components/evacademy-header/evacademy-header.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 const appRoutes: Routes = [
   {path: '', component: AppComponent}
 ]
+
+const materialModules = [
+  MatButtonModule,
+];
 
 @NgModule({
   declarations: [
@@ -42,9 +51,11 @@ const appRoutes: Routes = [
     DefaultHeaderComponent,
     EvAcademyComponent,
     ProfileComponent,
+    EvAcademyChargingComponent,
     LearningCourseResultComponent,
     UploadComponent,
-    EvAcademyWeatherComponent
+    EvAcademyWeatherComponent,
+    EvacademyHeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,13 +65,16 @@ const appRoutes: Routes = [
     MatSidenavModule,
     RouterModule.forRoot(appRoutes),
     MatCheckboxModule,
-    MatButtonModule,
     MatIconModule,
     AppRoutingModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatButtonModule,
+    CommonModule,
+    MatMenuModule
   ],
   providers: [NavigationService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

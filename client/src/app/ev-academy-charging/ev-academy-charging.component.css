@@ -11,6 +11,17 @@
     background: #454545;
     margin: 16px auto;
     border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border 0.5s ease-out 100ms;
+}
+
+.hasVoted {
+    border: 2px solid #05C3DD;
+}
+
+.option-container:hover {
+    border: 2px solid #05C3DD;
+    cursor: pointer;
 }
 
 .option-container img{
@@ -29,4 +40,24 @@ margin-right: 8px;
 
 .link-container {
     text-align: center;
+}
+
+.next-prev-container {
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 24px;
+}
+
+.previous {
+    color: #05C3DD;
+    padding: 12px 44px;
+    cursor: pointer;
+}
+
+.next {
+    border-radius: 20px;
+    padding: 12px 44px;
+    background: #05C3DD;
+    border: 0 solid transparent;
+    cursor: pointer;
 }
