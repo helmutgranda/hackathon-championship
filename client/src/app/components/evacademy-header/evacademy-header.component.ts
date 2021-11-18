@@ -8,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class EvacademyHeaderComponent implements OnInit {
 
   avatar: String = "/assets/user-pic.png";
-
+  showMenu: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  toggleMenu(){
+    this.showMenu = this.showMenu ? false : true;
+  }
 }

@@ -29,6 +29,7 @@ import { EvacademyHeaderComponent } from './components/evacademy-header/evacadem
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 
 const appRoutes: Routes = [
@@ -69,7 +70,8 @@ const materialModules = [
     MatInputModule,
     MatFormFieldModule,
     MatButtonModule,
-    CommonModule
+    CommonModule,
+    MatMenuModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent],

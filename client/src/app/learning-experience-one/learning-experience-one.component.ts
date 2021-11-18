@@ -7,8 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LearningExperienceOneComponent implements OnInit {
 
-  customfunction() {
-    console.log("called");
+  customFunction(){
+    document.getElementById("hidden")!.style.display="block";
+  }
+  nextPage(){
+    window.location.href="./ev-academy-charging";
+  }
+  previousPage(){
+    window.location.href="./login";
   }
   constructor() { }
 
