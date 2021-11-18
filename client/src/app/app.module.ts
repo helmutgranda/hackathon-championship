@@ -20,8 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { DefaultHeaderComponent } from './components/default-header/default-header.component';
 import { EvAcademyComponent } from './ev-academy/ev-academy.component';
 import {ProfileComponent} from "./profile/profile.component";
-import { MatInputModule } from '@Angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input'
 
 
 const appRoutes: Routes = [
