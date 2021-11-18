@@ -13,6 +13,10 @@ import {MatCheckboxModule} from "@angular/material/checkbox";
 import {MatButtonModule} from "@angular/material/button";
 import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatIconModule} from "@angular/material/icon";
+import { LoginComponent } from './login/login.component';
+import { SelectorComponent } from './selector/selector.component';
+import { NoPageFoundComponent } from './no-page-found/no-page-found.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 const appRoutes: Routes = [
@@ -24,7 +28,10 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavigationComponent,
-    DashboardComponent
+    DashboardComponent,
+    LoginComponent,
+    SelectorComponent,
+    NoPageFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     MatCheckboxModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
