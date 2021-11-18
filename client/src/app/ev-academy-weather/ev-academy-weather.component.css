@@ -1,16 +1,20 @@
 .option-container-header {
     background: #454545;
-    padding: 24px;
+    padding: 24px 48px;
     border-radius: 10px;
     text-align: center;
     margin: 16px 16px 0 16px;
-
+    
 }
 .option-container {
     display: flex;
+    flex: 33%;
+    align-items: center;
+    flex-direction: column;
     background: #454545;
     margin: 16px auto;
     border-radius: 10px;
+    padding: 16px;
 }
 
 .option-container img{
@@ -19,12 +23,13 @@ margin-right: 8px;
 
 .option-container div {
     padding: 16px;
-    display: flex;
     align-items: center;
 }
 
 .container {
     margin: 0 16px;
+    display: flex;
+    flex-direction: row;
 }
 
 .link-container {

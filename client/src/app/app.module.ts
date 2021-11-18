@@ -22,8 +22,9 @@ import { EvAcademyComponent } from './ev-academy/ev-academy.component';
 import {ProfileComponent} from "./profile/profile.component";
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component'
-import { LearningCourseBadgeComponent } from './learning-course-badge/learning-course-badge.component'
+import {LearningCourseResultComponent} from "./learning-course-result/learning-course-result.component";
+import { UploadComponent } from './upload/upload.component';
+import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
 
 
 const appRoutes: Routes = [
@@ -41,8 +42,9 @@ const appRoutes: Routes = [
     DefaultHeaderComponent,
     EvAcademyComponent,
     ProfileComponent,
-    EvAcademyChargingComponent,
-    LearningCourseBadgeComponent
+    LearningCourseResultComponent,
+    UploadComponent,
+    EvAcademyWeatherComponent
   ],
   imports: [
     BrowserModule,
