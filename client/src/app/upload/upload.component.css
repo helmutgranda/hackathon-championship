@@ -1,0 +1,42 @@
+/* .container {
+    height: 100vh;
+    background: #454545;
+    padding: 16px;
+} */
+
+.upload-icon-item {
+    color: #0A84FF;
+    font-size: 80px;
+}
+
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    background: #454545;
+  }
+
+  .box .row.close {
+      flex: 5%;
+      text-align: end;
+      margin-right: 16px;
+      margin-top: 16px;
+  }
+
+  .box .row.header {
+    flex: 30%;
+    margin: 16px;
+    text-align: center;
+    margin-top: 20%;
+  }
+  .box .row.content {
+    flex: 30%;
+    background: #454545;
+    margin: 16px;
+  }
+  .box .row.footer {
+    flex: auto;
+    
+    margin: 16px;
+  }
