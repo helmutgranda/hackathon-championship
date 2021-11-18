@@ -8,11 +8,13 @@ import { EvAcademyComponent } from './ev-academy/ev-academy.component';
 import { ProfileComponent } from './profile/profile.component';
 import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-charging.component';
 import { UploadComponent } from './upload/upload.component';
+import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weather.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'ev-academy', component: EvAcademyComponent },
   { path: 'ev-academy-charging', component: EvAcademyChargingComponent },
+  { path: 'ev-academy-weather', component: EvAcademyWeatherComponent },
   { path: 'upload', component: UploadComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },
