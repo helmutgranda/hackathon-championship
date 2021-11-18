@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200&display=swap");
 
 body {
     background:  #303030;
     color: white;
     padding: 0;
     margin: 0;
+    font-family: 'Overpass', Courier, monospace;
 }
 
 .header-container {
