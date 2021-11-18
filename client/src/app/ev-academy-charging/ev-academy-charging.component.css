@@ -19,6 +19,8 @@ margin-right: 8px;
 
 .option-container div {
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .container {
