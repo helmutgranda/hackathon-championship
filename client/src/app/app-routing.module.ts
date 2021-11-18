@@ -12,6 +12,7 @@ import { EvAcademyWeatherComponent } from './ev-academy-weather/ev-academy-weath
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import { LearningExperienceOneComponent } from './learning-experience-one/learning-experience-one.component';
 import { LearningCourseResultComponent } from './learning-course-result/learning-course-result.component';
+import { LyrqVideoComponent } from './lyrq-video/lyrq-video.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'ev-academy-weather', component: EvAcademyWeatherComponent },
   { path: 'ev-academy-amperage', component: LearningExperienceOneComponent },
   { path: 'ev-result', component: LearningCourseResultComponent },
+  { path: 'lyrq-video', component: LyrqVideoComponent },
   { path: 'upload', component: UploadComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'login', component: LoginComponent },

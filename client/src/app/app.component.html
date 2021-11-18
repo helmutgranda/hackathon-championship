@@ -1,13 +1,8 @@
 
 <!-- <app-navigation></app-navigation>
 <app-dashboard></app-dashboard> -->
-<div *ngIf="url !== '/login' && 
-            url !== '/profile' && 
-            url !== '/upload' && 
-            url !== '/' && 
-            url !== '/ev-academy-charging' &&
-            url !== '/ev-academy-amperage' && 
-            url !== '/ev-result'" class="header-container">
+<div *ngIf="url == '/selector' || 
+            url == '/ev-academy'" class="header-container">
 <app-default-header></app-default-header>
 </div>
 
@@ -15,8 +10,13 @@
             url == '/upload' || 
             url == '/ev-academy-weather' || 
             url == '/ev-academy-amperage' || 
+            url == '/ev-academy-weather' || 
             url == '/ev-result'" class="header-container">
     <app-evacademy-header></app-evacademy-header>
     </div>
+
+<div *ngIf="url == '/lyrq-video'" class="header-container">
+<app-lyrq-header></app-lyrq-header>
+</div>
 
 <router-outlet></router-outlet>

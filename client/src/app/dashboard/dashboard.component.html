@@ -1,29 +1,29 @@
-<div id="dashboardContainer" style="display:flex; flex-direction: column; justify-content: space-between">
-  <div class="row header" style="text-align: center">
+<div id="dashboardContainer" style="display:flex; flex-direction: column; justify-content: space-between;">
+  <div class="row header" style="text-align: center; margin-top: 24px; margin-bottom: 24px;font-size: 1.2em;">
     <div>Dashboard</div>
   </div>
   <div id="dashFeedContainer" class="center-content">
     <!--    Dashboard feed goes here-->
-    <div id="dashFeed"></div>
+    <img src="/assets/dash-feed.jpg" style="width: 359px; margin-left: 16px;"/>
   </div>
 
   <div id="awardsContainer">
     <div id="myAwardsTitle" class="left-align">
       My Awards
     </div>
-    <div style="display: flex; flex-direction: row; align-content: space-between" >
+    <div style="display: flex; flex-direction: row; align-content: space-between; text-align: center;" >
       <div id="pointsContainer">
-        <div id="points"></div>
+        <div><img src="/assets/points.png"/></div>
         <div style="text-align: center">Points</div>
       </div>
 
       <div id="badgesContainer">
-        <div id="badges"></div>
+        <div><img src="/assets/badges.png"/></div>
         <div style="text-align: center">Badges</div>
       </div>
 
       <div id="levelsContainer">
-        <div id="levels"></div>
+        <div ><img src="/assets/levels.png"/></div>
         <div style="text-align: center">Levels</div>
       </div>
 
@@ -38,8 +38,8 @@
       <div>Leaderboard</div>
     </div>
 
-    <div id="leaderboard" style="display: block; margin: auto">
-
+    <div style="display: block; text-align: center;">
+      <img src="/assets/leaderboard.png"/>
     </div>
     <div style="text-align: center;">
       <a (click)="openReport()">Report</a>
