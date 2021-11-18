@@ -1,3 +1,5 @@
+
+
 .center-align{
   text-align: center;
 }
@@ -11,12 +13,13 @@
 }
 
 
-#myAwardsTitle, #leaderboardTitle
+#myAwardsTitle, #leaderboardTitle{
+
+}
 
 #dashboardContainer{
   background-color: #303030;
   color: white;
-  min-height: 100vw;
   flex: 0 auto;
 }
 
@@ -31,6 +34,40 @@
 
 #pointsContainer, #badgesContainer, #levelsContainer{
   width: 800px;
+  margin: 11px
+}
+
+#points{
+  width: 94px;
+  height: 87px;
+  background-image: url('src/assets/points.png');
+}
+
+#badges{
+  width: 90px;
+  height: 84px;
+  background-image: url('src/assets/badges.png');
+}
+
+#levels{
+  width: 82px;
+  height: 78px;
+  background-image: url('src/assets/levels.png');
+}
+
+#leaderboard{
+  width: 342px;
+  height: 188px;
+  background-size: cover;
+  background-image: url('src/assets/leaderboard.png');
+}
+
+#dashFeed{
+  width: 354px;
+  height: 157px;
+  background-size: cover;
+  background-image: url('src/assets/dash-feed.png');
+  margin: 10px
 }
 
 .box {
