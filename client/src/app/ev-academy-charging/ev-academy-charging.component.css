@@ -46,6 +46,7 @@ margin-right: 8px;
     display: flex;
     justify-content:space-evenly;
     margin-top: 24px;
+    display: none;
 }
 
 .previous {
@@ -60,4 +61,8 @@ margin-right: 8px;
     background: #05C3DD;
     border: 0 solid transparent;
     cursor: pointer;
+}
+
+.showButtons {
+    display: flex;
 }

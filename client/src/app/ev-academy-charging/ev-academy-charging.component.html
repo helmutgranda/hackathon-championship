@@ -20,7 +20,7 @@
 <div class="link-container">
     <a href="/upload">Upload picture of your charging setup</a>
 </div>
-<div class="next-prev-container">
+<div class="next-prev-container" [ngClass]="{'showButtons': voted}">
     <a class="previous">Previous</a>
     <button mat-raised-button class="next" (click)="goNext()">Next</button>
 </div>

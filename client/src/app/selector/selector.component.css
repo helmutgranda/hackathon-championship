@@ -1,8 +1,14 @@
 .image-landing {
-    padding: 16px;
+    padding: 24px;
     text-align: center;
 }
 
 .image-landing > a > img {
     max-height: 44px;
+}
+
+hr {
+    border: 1px solid #8b8b8b;
+    margin-left: 8px;
+    margin-right: 8px;
 }

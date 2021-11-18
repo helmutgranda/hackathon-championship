@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class LearningExperienceOneComponent implements OnInit {
 
+  voted: Boolean = false;
+
   customFunction(){
     document.getElementById("hidden")!.style.display="block";
+    this.voted = true;
   }
   nextPage(){
     this.router.navigate(['/ev-result'])

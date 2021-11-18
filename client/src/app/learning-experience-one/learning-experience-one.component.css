@@ -34,9 +34,10 @@
 }
 #footer {
   height:5%;
-  display:flex;
+  display:none;
   flex-direction:row;
   background: transparent;
+  
 }
 #BTNnext {
   margin: auto;
@@ -105,3 +106,6 @@
   display:block;
 }
 
+.showButtons {
+  display: flex !important;
+}

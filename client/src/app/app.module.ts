@@ -32,6 +32,8 @@ import { EvAcademyChargingComponent } from './ev-academy-charging/ev-academy-cha
 import {MatMenuModule} from "@angular/material/menu";
 import { LyrqVideoComponent } from './lyrq-video/lyrq-video.component';
 import { LyrqHeaderComponent } from './components/lyrq-header/lyrq-header.component';
+import { LearningExperienceOneComponent } from './learning-experience-one/learning-experience-one.component';
+import { SimpleHeaderComponent } from './components/simple-header/simple-header.component';
 
 
 const appRoutes: Routes = [
@@ -58,7 +60,9 @@ const materialModules = [
     UploadComponent,
     EvAcademyWeatherComponent,
     EvacademyHeaderComponent,
+    SimpleHeaderComponent,
     LyrqHeaderComponent,
+    LearningExperienceOneComponent,
     LyrqVideoComponent,
   ],
   imports: [

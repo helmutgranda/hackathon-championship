@@ -3,14 +3,14 @@
   <p>What is the amperage rating for the Dual-Level Charge Cord that will be standard or available on all 2022 and later GM EVs?</p>
 </div>
 <div id="answerChoices" class="genericBox">
-  <button id="question" style="background-color:#adaabf" (click)="customFunction()">32 Amp</button>
-  <button id="question2" style="background-color:#cfbeaf" (click)="customFunction()">40 Amp</button>
-  <button id="question3" style="background-color:#cbcbaa" (click)="customFunction()">80 Amp</button>
+  <button id="question" style="background-color:#adaabf;cursor:pointer;" (click)="customFunction()">32 Amp</button>
+  <button id="question2" style="background-color:#cfbeaf;cursor:pointer;" (click)="customFunction()">40 Amp</button>
+  <button id="question3" style="background-color:#cbcbaa;cursor:pointer;" (click)="customFunction()">80 Amp</button>
 </div>
 <div class="genericBox" id="hidden" style="display:none;">
   <img src="assets/lvl2_charging_graph.png" id="answerImage"/>
 </div>
-<div class="genericBox" id="footer">
+<div class="genericBox" id="footer" [ngClass]="{'showButtons': voted}">
   <button id="BTNprevious" (click)="previousPage()">Previous</button>
   <button id="BTNnext" (click)="nextPage()">Next</button>
 </div>

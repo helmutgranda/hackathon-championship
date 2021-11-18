@@ -19,4 +19,8 @@
 <app-lyrq-header></app-lyrq-header>
 </div>
 
+<div *ngIf="url == '/dashboard' || url == '/profile'" class="header-container">
+    <app-default-header></app-default-header>
+    </div>
+
 <router-outlet></router-outlet>
