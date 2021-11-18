@@ -7,34 +7,37 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import com.gm.hackathon.vega.Model.User;
-import com.gm.hackathon.vega.Model.Quiz;
 
 public class ReportingService{
 
-    private String QuizHeader="Quiz ID, Total Attempts, Passing Attempts, Passing Rate";
-    private String dealershipHeader="Dealership Name, Total Attempts, Passing Attempts, Passing Rate";
-    private String stateHeader="State, Total Attempts, Passing Attempts, Passing Rate";
+    private String dealershipHeader="DEALERSHIP NAME, TOTAL ATTEMPTS, PASSING ATTEMPTS, PASSING RATE";
+    private String stateHeader="STATE, TOTAL ATTEMPTS, PASSING ATTEMPTS, PASSING RATE";
+    private String satisfactionHeader="PERCENT SATISFIED, PERCENT UNSATISFIED, PERCENT UNKNOWN, NUMBER OF INDIVIDUALS SURVEYED";
 
     private UserService userService = UserService.getInstance();
-    private QuizService quizService = QuizService.getInstance();
 
     public ReportingService(){
-
         writeToExcel(dealershipHeader,getDealershipStatistics(), "Dealership");
         writeToExcel(stateHeader,getStateStatistics(),"State");
-        /*
-        * Report types:
-        *   Quiz Statistics
-        *   Dealership Statistics - done
-        *   State Statistics - done
-        *   Satisfaction Statistics
-        * */
-
+        writeToExcel(satisfactionHeader,getSatisfactionStatistics(), "Satisfaction");
     }
 
-    private String getQuizStatistics(){
-
-        return "";
+    private String getSatisfactionStatistics(){
+        int yes=0, no=0, noAnswer=0;
+        for(int i=1;i<=1000;i++){
+            Boolean isSatisfied = userService.getUser(i).isSatisfied();
+            try {
+                if (isSatisfied)
+                    yes++;
+                else
+                    no++;
+            }
+            catch (NullPointerException e) {
+                noAnswer++;
+            }
+        }
+        int totalCount=yes+no+noAnswer;
+        return String.format("%.2f,%.2f,%.2f,%d%n", ((double)yes/totalCount), ((double)no/totalCount), ((double)noAnswer/totalCount), totalCount);
     }
     private String getStateStatistics(){
         String output="";
